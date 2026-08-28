@@ -11,7 +11,7 @@ app = FastAPI(title="KnowledgeBase AI API") # creates the main FastAPI app insta
 # CORS permissions
 app.add_middleware(
     CORSMiddleware, # adds the CORS middleware to the application
-    allow_origins=["*"], # requests from any frontend domain will be allowed (COMMA FIXED HERE)
+    allow_origins=["*"], # requests from any frontend domain will be allowed
     allow_credentials=True, # permit cookies and authentication headers in the requests
     allow_methods=["*"], # allows all HTTP request methods (GET, POST, PUT, DELETE, etc)
     allow_headers=["*"], # allows all HTTP request headers
